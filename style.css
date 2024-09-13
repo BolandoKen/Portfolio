@@ -1,7 +1,9 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
 .navbar{
-    background-color: black;
-    color: white;
-    opacity: 10%;
+    background-color: rgb(32, 32, 32);
     font-family: "Inter", sans-serif;
 }
 .navdiv{
@@ -21,16 +23,57 @@ li a{
     color: white;
     text-decoration: none;
 }
+h1{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+p{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+button{
+    background-color:transparent;
+    border: 1px solid black;
+    border-radius: 35px;
+    padding: 20px 40px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+}
+.buttonContainer{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 .slide1{
+    height: 720px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: black;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .bottomText{
     color: white;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-
+    margin-bottom: 0;
+}
+.kinotediv{
+    height: 720px;
+    width: 100%;
+    background: linear-gradient(rgb(37, 41, 109), rgb(206, 214, 239));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+.kinoteLogo{
+    height: 300px;
+    width: auto;
+    filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.315));
+    padding: 40px;
+}
+.kinoteTopText{
+color: white;
 }
