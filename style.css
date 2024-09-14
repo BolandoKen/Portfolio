@@ -77,3 +77,101 @@ button{
 .kinoteTopText{
 color: white;
 }
+.softwareList li{
+    color: black;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    column-count: 3;
+}
+.languageList li{
+    color: black;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    column-count: 5;
+}
+.parentdiv{
+    display: flex;
+    width: 100%;
+    height: 720px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+}
+.topdiv{
+    width: 100%;
+}
+.topdiv h1{
+    text-align: left;
+    padding-left: 16%;
+    padding-top: 15%;
+}
+.bottomdiv{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.childdiv{
+    background-color: white;
+}
+.childdiv p{
+    text-align: left;
+}
+.childdiv h1{
+    text-align: left;
+}
+#expertisediv{
+    width: 48%;
+    background-color: white;
+}
+#softwarediv{
+    width: 26%;
+    background-color: white;
+}
+#languagediv{
+    width: 26%;
+}
+#expertisediv p{
+    padding-left: 33%;
+}
+#expertisediv p:not(:first-child){
+    font-weight: bold;
+    font-size: 32px;
+}
+#languagediv p:not(:first-child) {
+    font-weight: bold;
+}
+#softwarediv p:not(:first-child) {
+    font-weight: bold; 
+}
+.contacts{
+    width: 100%;
+    height: 360px;
+    background-color: blue;
+}
+.footer{
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+footer{
+    padding-top: 6%;
+    padding-left: 16%;
+}
+footer p{
+    text-align: left;
+    color: black;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer p:first-child{
+    font-weight: bold;
+}
+footer p:not(:first-child){
+    font-weight: normal;
+}
+
