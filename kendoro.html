@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kendoro</title>
+    <link rel="stylesheet" href="kendoro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <a href="#">Kendoro</a>
+        </div>
+    </nav>
+    <div class="main-div">
+        <div class="timer-div">
+            <div class="counter-div">
+                <button onclick="startCountdown()"><p id="timer">00:00</p></button>
+            </div>
+            <div class="button-div">
+                <button onclick="setTime(25)">Kenodoro</button>
+                <button onclick="setTime(15)">Long Break</button>
+                <button onclick="setTime(5)">Short Break</button></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let countdownTime = 0;
+        let countdownInterval;
+
+   
+        function setTime(minutes) {
+            countdownTime = minutes * 60; 
+            clearInterval(countdownInterval); 
+            document.getElementById('timer').textContent = formatTime(countdownTime);
+        }
+
+        function startCountdown() {
+            if (countdownTime <= 0) {
+                alert("Please select a time first.");
+                return;
+            }
+
+            clearInterval(countdownInterval);
+            countdownInterval = setInterval(function() {
+                countdownTime--;
+
+                let minutes = Math.floor(countdownTime / 60);
+                let seconds = countdownTime % 60;
+
+                document.getElementById('timer').textContent = formatTime(countdownTime);
+
+                if (countdownTime <= 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById('timer').textContent = "00:00";
+                }
+            }, 1000);
+        }
+
+        function formatTime(seconds) {
+            let minutes = Math.floor(seconds / 60);
+            seconds = seconds % 60;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            return minutes + ':' + seconds;
+        }
+
+        window.onload = function() {
+            document.getElementById('timer').textContent = '00:00';
+        };
+    </script>
+</body>
+</html>
