@@ -160,11 +160,34 @@ color: white;
 .Project-div{
     height: 720px;
     width: 100%;
-    background-color: rgb(220, 245, 235);
+    background-color: #f5f5f7;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.Project-div div{
-    background-color: rgb(23, 33, 33);
+.container{
+    height:70%;
+    width: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container div{
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.315));
+}
+.container .box{
+    font-family: "Inter", sans-serif;
+    color: black;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.box p{
+padding: 30px;
 }
 .contacts{
     width: 100%;
