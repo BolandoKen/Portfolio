@@ -199,7 +199,11 @@ color: white;
     align-items: center;
 }
 .box p{
-padding: 30px;
+padding-right: 30px;
+}
+#kendoroImg{
+    height: 95px;
+    mask-image: linear-gradient(90deg,black 70%,transparent 90%);
 }
 .contacts{
     width: 100%;
