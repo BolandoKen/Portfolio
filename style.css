@@ -31,6 +31,7 @@ li a{
     color: rgb(204, 204, 204);
     text-decoration: none;
     margin: none;
+    transition: 0.3s;
 }
 li a:hover{
     color: white;
@@ -51,6 +52,10 @@ button{
     cursor: pointer;
     text-align: center;
     outline: none;
+}
+button:hover{
+    background-color: black;
+    color: white;
 }
 .buttonContainer{
     display: flex;
