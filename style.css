@@ -178,7 +178,6 @@ color: white;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-color: red;
 }
 .container div{
     width: 275px;
