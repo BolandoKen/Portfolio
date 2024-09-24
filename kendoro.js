@@ -50,7 +50,11 @@ function toggleColorTransition(){
 }
 
 function resetChargeDiv(){
+    chargeDiv.style.transition = 'none';
     chargeDiv.classList.remove('active');
+    setTimeout(() => {
+        chargeDiv.style.transition = '';
+    }, 0);
 }
 function setTransitionDuration(time){
     chargeDiv.style.transition = `background-position ${time * 60}s ease, box-shadow ${time}s ease`;
