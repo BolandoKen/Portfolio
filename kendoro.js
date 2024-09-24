@@ -26,6 +26,7 @@ function startCountdown() {
         if (countdownTime <= 0) {
             clearInterval(countdownInterval);
             document.getElementById('timer').textContent = "00:00";
+            playRingtone();
             resetChargeDiv();
         }
     }, 1000);
@@ -58,4 +59,9 @@ function resetChargeDiv(){
 }
 function setTransitionDuration(time){
     chargeDiv.style.transition = `background-position ${time * 60}s ease, box-shadow ${time}s ease`;
+}
+function playRingtone(){
+    const ringtone = document.getElementById('ringtone');
+    ringtone.currentTime = 0;
+    ringtone.play();
 }
