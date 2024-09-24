@@ -1,7 +1,6 @@
 let countdownTime = 0;
 let countdownInterval;
 
-
 function setTime(minutes) {
     countdownTime = minutes * 60; 
     clearInterval(countdownInterval); 
@@ -13,19 +12,21 @@ function startCountdown() {
         alert("Please select a time first.");
         return;
     }
-
     clearInterval(countdownInterval);
+
+    setTransitionDuration(countdownTime/60);
+
+    toggleColorTransition();
+
     countdownInterval = setInterval(function() {
         countdownTime--;
-
-        let minutes = Math.floor(countdownTime / 60);
-        let seconds = countdownTime % 60;
 
         document.getElementById('timer').textContent = formatTime(countdownTime);
 
         if (countdownTime <= 0) {
             clearInterval(countdownInterval);
             document.getElementById('timer').textContent = "00:00";
+            resetChargeDiv();
         }
     }, 1000);
 }
@@ -42,5 +43,15 @@ window.onload = function() {
     document.getElementById('timer').textContent = '00:00';
 };
 
-const chargerDiv= document.getElementById('chargeDiv');
-const changeColorButton = document.get
+const chargeDiv = document.getElementById('chargeDiv');
+
+function toggleColorTransition(){
+    chargeDiv.classList.toggle('active');
+}
+
+function resetChargeDiv(){
+    chargeDiv.classList.remove('active');
+}
+function setTransitionDuration(time){
+    chargeDiv.style.transition = `background-position ${time * 60}s ease, box-shadow ${time}s ease`;
+}
