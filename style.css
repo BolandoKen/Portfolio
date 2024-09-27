@@ -204,7 +204,10 @@ padding-right: 20px;
 }
 #kendoroImg{
     height: 95px;
-    
+}
+#calculatorPNG{
+    height: 150px;
+    padding: 30px;
 }
 .contacts{
     width: 100%;
