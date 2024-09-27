@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <div class="big-circle"></div>
+        <div class="small-circle"></div>
+            <div class="calculator">
+                <div class="calc">
+            <div class="container">
+                <input id="display" readonly>
+                <button onclick="clearDisplay()" class="top-row">AC</button>
+                <button onclick="negativeValue()" class="top-row">n</button>
+                <button onclick="appendToDisplay('%')" class="top-row">%</button>
+                <button onclick="appendToDisplay('/')" class="side-column">/</button>
+                <button onclick="appendToDisplay('7')" class="numpad">7</button>
+                <button onclick="appendToDisplay('8')" class="numpad">8</button>
+                <button onclick="appendToDisplay('9')" class="numpad">9</button>
+                <button onclick="appendToDisplay('*')" class="side-column">x</button>
+                <button onclick="appendToDisplay('4')" class="numpad">4</button>
+                <button onclick="appendToDisplay('5')" class="numpad">5</button>
+                <button onclick="appendToDisplay('6')" class="numpad">6</button>
+                <button onclick="appendToDisplay('-')" class="side-column">-</button>
+                <button onclick="appendToDisplay('1')" class="numpad">1</button>
+                <button onclick="appendToDisplay('2')" class="numpad">2</button>
+                <button onclick="appendToDisplay('3')" class="numpad">3</button>
+                <button onclick="appendToDisplay('+')" class="side-column">+</button>
+                <button onclick="clearLastEntry()" class="numpad">C</button>
+                <button onclick="appendToDisplay('0')" class="numpad">0</button>
+                <button onclick="appendToDisplay('.')" class="numpad">.</button>
+                <button onclick="calculate()" class="side-column">=</button>
+            </div>
+            </div>
+            <div class="text">
+                <p id="title">Calculator</p>
+                <p id="discription">Made by Kin Bolando</p>
+            </div>
+        </div>
+    </body>
+    <script src="logic.js"></script>
+</html>

@@ -1,0 +1,125 @@
+html{
+    background-color: #FAF3E1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.big-circle{
+    border-radius: 100%;
+    position: absolute;
+    width: 657px;
+    height: 657px;
+    left: 706px;
+    top: -290px;
+    background: linear-gradient(218.3deg, #F5E6C5 6.4%, #F56E1F 88.78%);
+}
+.small-circle{
+    border-radius: 100%;
+    position: absolute;
+    width: 419px;
+    height: 419px;
+    left: 48px;
+    top: 631px;
+    background: linear-gradient(218.3deg, #F5E6C5 6.4%, #F56E1F 88.78%);
+
+}
+.calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1064px;
+    height: 668px;
+    left: calc(50% - 1064px/2 - 14px);
+    top: 128px;
+    background: linear-gradient(108.13deg, rgba(217, 217, 217, 0.1) 7.95%, rgba(255, 255, 255, 0.4) 87.36%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 63px;
+}
+.calc{
+    width: 350px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: #222222;
+    border-radius: 63px;
+
+}
+.container{
+    width: 320px;
+    height: 480px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+    grid-template-columns: 80px 80px 80px 80px;
+    font-family: sans-serif;
+}
+#display{
+    background: #353333;
+    border-radius: 20px;
+    width: 92%;
+    height: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 5;
+    color: white;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    text-align: right;
+    padding: 10px;
+}
+button{
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    color: #222222;
+    font-size: 25px;
+    border: none;
+}
+button:active{
+    background-color: white;
+    color: black;
+}
+.side-column{
+    background-color: #FF6E1F;
+}
+.top-row{
+    background-color: #FAF3E1;
+}
+.numpad{
+    background-color: #F5E6C5;
+}
+.text{
+    width: 350px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Inter", sans-serif;
+    padding-left: 50px;
+    margin: 0;
+}
+#title{
+    font-size: 70px;
+    margin: 0;
+    font-weight: bold;
+}
+#discription{
+    font-size: 25px;
+    margin: 0;
+}
