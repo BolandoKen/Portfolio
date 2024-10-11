@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+html {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-div {
+    display: flex;
+    flex-direction: column;
+    background-color: #A41D21;
+    position: fixed;
+    width: 252px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.nav-div a {
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.logo-div {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#myIITLogo {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.tools-div {
+    margin-top: 40px;
+    flex-grow: 1;
+}
+
+.tools-div a {
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    transition: font-size 0.5s;
+}
+
+.tools-div a:hover {
+    background-color: #86171b;
+    font-size: 21px;
+}
+
+.content-div {
+    margin-left: 252px;
+    width: calc(100% - 252px);
+    height: 100%;
+    background-color: white;
+}
+.content-div p{
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.navtop-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+
+}
+.navtop-div a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 20px;
+}
+.navtop-div a:hover{
+    text-decoration: underline;
+}
+.navtop-div #profilePic{
+    width: 40px;
+    border-radius: 100%;
+    background-color: #86171b;
+    margin-left: 8px;
+}
+.navtop-div #toolsIcon{
+    width: 40px;
+    margin-left: 8px;
+}
+.annoucements-div {
+    height: 280px;
+    width: 100%;
+}
+.annoucements-div .box-div{
+    display: flex;
+    width: 100vh;
+    flex-direction: row;
+}
+.annoucements-div .box{
+width: 232px;
+height: 135px;
+background: #333333;
+border-radius: 20px;
+margin: 20px;
+}
+.survey-div {
+    height: 400px;
+    width: 100%;
+}
+.survey-div .box-div{
+    display: flex;
+    width: 100vh;
+    flex-direction: row;
+}
+.survey-div .box{
+width: 358px;
+height: 205.82px;
+background: #333333;
+border-radius: 20px;
+margin: 20px;
+}
