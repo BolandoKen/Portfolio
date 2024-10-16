@@ -114,6 +114,22 @@ background: #333333;
 border-radius: 20px;
 margin: 20px;
 }
+.box-div .heading{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    padding-left: 20px;
+    padding-bottom: none;
+}
+.box-div .subheading{
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    padding-top: none;
+}
+.box-div .content{
+    font-size: 10px;
+}
 .survey-div {
     height: 400px;
     width: 100%;
