@@ -22,15 +22,14 @@ html {
     top: 0;
 }
 
-.nav-div a {
+.nav-div a, tools-div a{
     font-family: "Inter", sans-serif;
     color: white;
     text-decoration: none;
 }
 
 .logo-div {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px 0 0 20px;
 }
 
 #myIITLogo {
@@ -38,16 +37,10 @@ html {
     font-size: 28px;
 }
 
-.tools-div {
-    margin-top: 40px;
-    flex-grow: 1;
-}
-
 .tools-div a {
     padding: 28px;
     display: flex;
     align-items: center;
-    font-family: "Inter", sans-serif;
     font-size: 20px;
     transition: font-size 0.5s;
 }
@@ -58,12 +51,14 @@ html {
 }
 
 .content-div {
+    display: flex;
+    flex-direction: column;
     margin-left: 252px;
-    width: calc(100% - 252px);
+    width: 100%;
     height: 100%;
     background-color: white;
 }
-.content-div p{
+.content-div .header{
     color: black;
     font-family: "Inter", sans-serif;
     font-size: 40px;
@@ -98,51 +93,43 @@ html {
     width: 40px;
     margin-left: 8px;
 }
-.annoucements-div {
-    height: 280px;
-    width: 100%;
-}
-.annoucements-div .box-div{
-    display: flex;
-    width: 100vh;
-    flex-direction: row;
-}
-.annoucements-div .box{
-width: 232px;
-height: 135px;
-background: #333333;
-border-radius: 20px;
-margin: 20px;
-}
-.box-div .heading{
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    color: white;
-    font-weight: normal;
-    padding-left: 20px;
-    padding-bottom: none;
-}
-.box-div .subheading{
-    font-family: "Inter", sans-serif;
-    font-size: 10px;
-    padding-top: none;
-}
-.box-div .content{
-    font-size: 10px;
-}
-.survey-div {
+.annoucements-div, .survey-div {
     height: 400px;
     width: 100%;
 }
-.survey-div .box-div{
+
+.annoucements-div .box-div, .survey-div .box-div{
     display: flex;
     width: 100vh;
     flex-direction: row;
 }
-.survey-div .box{
-width: 358px;
-height: 205.82px;
+.annoucements-div .box-div a, .survey-div .box-div a{
+    text-decoration: none;
+}
+.annoucements-div .box, .survey-div .box{
+display: flex;
+flex-direction: column;
+margin: 0;
+width: 400px;
+height: 240px;
 background: #333333;
 border-radius: 20px;
 margin: 20px;
+flex-shrink: 0;
+text-decoration: none;
 }
+.annoucements-div .box-div .box .heading, .subheading, .content{
+    color: white;
+    font-family: "Inter", sans-serif;
+    padding: 20px 20px 0 20px;
+    overflow: hidden;
+    margin: 0;
+}
+.annoucements-div .box-div .box .subheading, .content{
+    font-size: 12px;
+}
+.annoucements-div .box-div .box .content{
+    color: #B5B5B5;
+}
+
+
