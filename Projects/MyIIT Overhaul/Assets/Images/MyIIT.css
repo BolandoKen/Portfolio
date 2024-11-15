@@ -73,8 +73,9 @@ html {
     flex-direction: row;
     justify-content: right;
     align-items: center;
+    z-index: 10000;
     padding: 20px;
-
+    backdrop-filter: blur(10px);
 }
 .navtop-div a {
     text-decoration: none;
