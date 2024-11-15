@@ -49,7 +49,9 @@ html {
     background-color: #86171b;
     font-size: 21px;
 }
-
+.herosection-div img{
+    width: 100vh;
+}
 .content-div {
     display: flex;
     flex-direction: column;
