@@ -63,7 +63,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     height: 720px;
-    width: 100%;
+    width: auto;
     align-items: center;
     justify-content: center;
 }
@@ -85,7 +85,7 @@ button:hover{
     margin-bottom: 0;
 }
 .kinoteLogo{
-    height: 300px;
+    height: 350px;
     width: auto;
     filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.315));
     padding: 40px;
@@ -196,7 +196,7 @@ padding: 20px;
 }
 .footer{
     background-color: rgb(228, 228, 228);
-    width: 100%;
+    width: auto;
     height: 360px;
     display: flex;
     color: black;
