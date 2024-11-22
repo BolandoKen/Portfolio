@@ -62,6 +62,7 @@ button:hover{
 #aboutPage, .kinotediv, #skillsPage, #projectPage{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     height: 720px;
     width: auto;
     align-items: center;
